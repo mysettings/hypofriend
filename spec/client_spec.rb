@@ -35,9 +35,9 @@ describe Hypofriend::Client do
         stub_request(:get, "https://offer-v3.hypofriend.de/api/v5/new-offers?loan_amount=350000&property_value=150000&repayment=2.0&years_fixed=20").
           with(
             headers: {
-              'Accept'=>'*/*',
-              'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
-              'User-Agent'=>'Ruby'
+              'Accept': '*/*',
+              'Accept-Encoding': 'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
+              'User-Agent': 'Ruby'
             }).
           to_return(
             status: 200,
