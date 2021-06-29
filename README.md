@@ -17,3 +17,5 @@ offers.first.institution_name
 offers.first.borrowing_rate
 #=> 1.22
 ```
+
+If the response got from the server is not successful, an exception `Hypofriend::FetchError` is raised.
